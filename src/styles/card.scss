@@ -2,7 +2,7 @@
   @include flex-center;
   flex-direction: column;
   width: 200px;
-  padding: 30px 14px 15px;
+  padding: 15px 14px;
 
   border: 1px solid #f3f3f3;
   border-radius: 5px;
@@ -10,22 +10,26 @@
   line-height: 13px;
 
   &__image {
+    box-sizing: content-box;
+    padding: 12px 0;
     align-self: center;
     width: 160px;
     height: 134px;
+    border: 3px solid transparent;
+    transition: transform 1s;
+
+    &:hover {
+      border-color: #f3f3f3;
+      transform: scale(1.2);
+    }
   }
 
   &__title {
-    padding-top: 45px;
-    margin: 0 auto;
+    margin: 30px 0 5px;
     height: 31px;
     font-size: $font-size-normal;
     font-weight: $font-weight-normal;
     line-height: 15px;
-  }
-
-  &__code {
-    padding-top: 35px;
   }
 
   &__rate {
@@ -57,12 +61,14 @@
     font-size: 14px;
     line-height: 16px;
     color: $main-color;
-    
+
     border: 1px solid $step-color;
     text-transform: uppercase;
     text-decoration: none;
     background-color: $step-color;
     border-radius: 5px;
+
+    transition: background-color 1s, color 1s;
 
     &:hover {
       color: $step-color;
