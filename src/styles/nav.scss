@@ -1,9 +1,8 @@
 .nav {
-  height: 60px;
-  display: flex;
 
   &__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
     justify-content: space-around;
     align-items: center;
     list-style: none;

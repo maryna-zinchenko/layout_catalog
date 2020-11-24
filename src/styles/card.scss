@@ -1,7 +1,7 @@
 .card {
   @include flex-center;
   flex-direction: column;
-  width: 200px;
+  width: $card-width;
   padding: 15px 14px;
 
   border: 1px solid #f3f3f3;
@@ -25,7 +25,7 @@
   }
 
   &__title {
-    margin: 30px 0 5px;
+    margin: 30px 0 4px;
     height: 31px;
     font-size: $font-size-normal;
     font-weight: $font-weight-normal;
