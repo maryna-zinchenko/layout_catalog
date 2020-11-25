@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, $card-width);
     grid-gap: 50px $card-gap;
-    max-width: 4 * $card-width + 3 * $card-gap;
+    max-width: $max-width;
     justify-content: center;
     justify-items: center;
     margin: 0 auto;

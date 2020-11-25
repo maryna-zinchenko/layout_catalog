@@ -4,7 +4,7 @@
   width: $card-width;
   padding: 15px 14px;
 
-  border: 1px solid #f3f3f3;
+  border: 1px solid $border-color;
   border-radius: 5px;
   font-size: 11px;
   line-height: 13px;
@@ -19,7 +19,7 @@
     transition: transform 1s;
 
     &:hover {
-      border-color: #f3f3f3;
+      border-color: $border-color;
       transform: scale(1.2);
     }
   }
