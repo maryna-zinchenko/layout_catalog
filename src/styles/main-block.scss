@@ -1,10 +1,12 @@
 .main {
-  @include flex-center;
 
   &__catalog {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, $card-width);
+    grid-gap: 50px $card-gap;
+    max-width: $max-width;
     justify-content: center;
-    flex-wrap: wrap;
-    max-width: 992px;
+    justify-items: center;
+    margin: 0 auto;
   }
 }
